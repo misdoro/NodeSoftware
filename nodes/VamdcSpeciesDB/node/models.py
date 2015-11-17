@@ -10,13 +10,13 @@
 from django.db import models
 
 class VamdcSpeciesTypes(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=450)
     class Meta:
         db_table = u'vamdc_species_types'
 
 class VamdcMemberDatabases(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     short_name = models.CharField(max_length=60)
     description = models.CharField(max_length=765, blank=True)
     ivo_identifier = models.CharField(max_length = 100, blank = True)
@@ -27,7 +27,7 @@ class VamdcSpecies(models.Model):
     id = models.CharField(max_length=120, primary_key=True)
     inchi = models.TextField()
     inchikey = models.CharField(max_length=90)
-    inchikey_duplicate_counter = models.IntegerField(unique=True)
+    inchikey_duplicate_counter = models.IntegerField()#!!!WTF, why was it unique?unique=True)
     stoichiometric_formula = models.CharField(max_length=450)
     mass_number = models.IntegerField()
     charge = models.IntegerField()
@@ -92,35 +92,35 @@ class VamdcSpecies(models.Model):
         return self.species_foreign_ids()
 
 class VamdcConformers(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
     conformer_name = models.CharField(max_length=450)
     class Meta:
         db_table = u'vamdc_conformers'
 
 class VamdcInchikeyExceptions(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
     reason = models.CharField(max_length=765)
     class Meta:
         db_table = u'vamdc_inchikey_exceptions'
 
 class VamdcMarkupTypes(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=90)
     class Meta:
         db_table = u'vamdc_markup_types'
 
 class VamdcMemberDatabaseIdentifiers(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
-    database_species_id = models.CharField(max_length=255, unique=True)
+    database_species_id = models.CharField(max_length=255, unique=True)#!!!!should it be unique?
     member_database = models.ForeignKey(VamdcMemberDatabases)
     class Meta:
         db_table = u'vamdc_member_database_identifiers'
 
 class VamdcSpeciesNames(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
     name = models.CharField(max_length=450)
     markup_type = models.ForeignKey(VamdcMarkupTypes)
@@ -130,7 +130,7 @@ class VamdcSpeciesNames(models.Model):
         db_table = u'vamdc_species_names'
 
 class VamdcSpeciesResources(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
     url = models.CharField(max_length=765)
     description = models.CharField(max_length=450)
@@ -140,7 +140,7 @@ class VamdcSpeciesResources(models.Model):
         db_table = u'vamdc_species_resources'
 
 class VamdcSpeciesStructFormulae(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
     formula = models.CharField(max_length=450)
     formula_latex = models.CharField(max_length=450)
@@ -157,7 +157,7 @@ class VamdcDictAtoms(models.Model):
     a dictionary for atomic elements.
     !!! THIS IS NOT PART OF THE OFFICIAL VAMDC SPECIES DB !!!
     """
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
     symbol = models.CharField(max_length=10)
     element = models.CharField(max_length=10)

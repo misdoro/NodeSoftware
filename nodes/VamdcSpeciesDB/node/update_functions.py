@@ -11,6 +11,8 @@ from vamdclib.inchi import *
 
 from vamdclib.settings import *
 
+import traceback,sys
+
 ##def count_protons(inchi):
 ##    """
 ##    Determines the charge from the inchi
@@ -260,8 +262,13 @@ def insert_molecule(molecule, member_db_id = 0, checkonly = False):
 
     try:
         inchi_info = InChI(inchi)
-    except:
+    except Exception, e:
+        exc_type, exc_value, exc_traceback = sys.exc_info()
         print "Could not parse InChI: %s" % inchi
+        print e
+        traceback.print_exc(file=sys.stdout)
+        traceback.print_exception(exc_type, exc_value, exc_traceback,
+                              limit=2, file=sys.stdout)
         return None
     
     charge = inchi_info.charge #get_charge(inchi)
@@ -434,6 +441,7 @@ def insert_structural_formula(id, formula, checkonly = False):
             structformula.search_priority = search_priority
             structformula.created = datetime.now()
 
+
             structformula.save()
         else:
             print "%s %s" % (id, formula)
@@ -497,7 +505,7 @@ def insert_member_db_speciesid(id, member_db_id, speciesid, checkonly = False):
             dbidentifier.species = specie
             dbidentifier.member_database = member_database
             dbidentifier.database_species_id = speciesid
-            
+            print 
             dbidentifier.save()
         else:
             print "%20s %2d %20s" % (id, member_db_id, speciesid)
