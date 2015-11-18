@@ -13,6 +13,8 @@ from vamdclib.settings import *
 
 import traceback,sys
 
+from vamdclib.nodes import Nodelist
+
 ##def count_protons(inchi):
 ##    """
 ##    Determines the charge from the inchi
@@ -55,6 +57,40 @@ import traceback,sys
 ##    num_protons = count_protons(inchi)
     
 ##    return charge + num_protons
+
+def update_nodes():
+    print "query the registry for active nodes"
+    nl=Nodelist()
+    ivoaids=[]
+    nowtime=datetime.now()
+    
+    #for node in nl:
+    #  ivoaids.append(node.identifier)
+    
+    #Update the nodes last seen
+    #VamdcMemberDatabases.objects.filter(ivo_identifier__in = ivoaids).update(last_update_date=nowtime)
+    
+    #Add new nodes or update the existing ones
+    for node in nl:
+      db_node, created = VamdcMemberDatabases.objects.get_or_create(ivo_identifier = node.identifier)
+      if created:
+        print "new node "+node.identifier+" nn"+node.name+" nu"+node.url+" em"+node.maintainer+"\n"
+        db_node.short_name = node.name
+        db_node.contact_email = node.maintainer
+        db_node.status=0
+        db_node.last_update_date = nowtime
+      else:
+	print "Updating data for node "+db_node.short_name
+        db_node.contact_email = node.maintainer
+        db_node.last_update_date = nowtime
+      db_node.save()
+    
+    
+def query_active_nodes():
+    
+    for node in VamdcMemberDatabases.objects.filter( status = RecordStatus.ACTIVE ):
+      print "Getting species for node "+node.short_name
+    
 
 def get_node_list():
     """
@@ -139,7 +175,6 @@ def process_species(nodename, checkonly = False):
     for atomid in atoms:
         # Get atom - object
         atom = atoms[atomid]
-        species_type = 1
         atom.IonCharge = int(atom.IonCharge)
         try:
             if atom.IonCharge == 0:
@@ -194,7 +229,6 @@ def process_species(nodename, checkonly = False):
     for moleculeid in molecules:
         # Get molecule - object
         molecule = molecules[moleculeid]
-        species_type = 2
         
         #------------------------------------------------------------
         # Insert specie into database (will be inserted only if not already present)
@@ -291,7 +325,6 @@ def insert_molecule(molecule, member_db_id = 0, checkonly = False):
     if checkonly == False:
         specie = VamdcSpecies()
  
-        type_2 = VamdcSpeciesTypes.objects.get(id = 2)
         member_database = VamdcMemberDatabases.objects.get(id = member_db_id)
         
         specie.id = inchikey
@@ -299,7 +332,7 @@ def insert_molecule(molecule, member_db_id = 0, checkonly = False):
         specie.inchikey = inchikey
         specie.inchikey_duplicate_counter = 1
         specie.stoichiometric_formula = stoichiometricformula
-        specie.species_type = type_2
+        specie.species_type = SpeciesType.MOLECULE
         specie.created = datetime.now()
         specie.member_database = member_database
         specie.mass_number = molecular_weight
@@ -378,7 +411,6 @@ def insert_atom(atom, member_db_id = 0, checkonly = False):
         print "DETERMINED mass: %d" % massnumber
         
     if checkonly == False:
-        type_1 = VamdcSpeciesTypes.objects.get(id = 1)
         member_database = VamdcMemberDatabases.objects.get(id = member_db_id)
         specie = VamdcSpecies()
         
@@ -390,7 +422,7 @@ def insert_atom(atom, member_db_id = 0, checkonly = False):
         specie.inchikey = atom.InChIKey
         specie.inchikey_duplicate_counter = 1
         specie.stoichiometric_formula = stoichiometricformula
-        specie.species_type = type_1
+        specie.species_type = SpeciesType.ATOM
         specie.created = datetime.now()
         specie.member_database = member_database
         specie.mass_number = atom.MassNumber

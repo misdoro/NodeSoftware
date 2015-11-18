@@ -8,20 +8,59 @@
 # into your database.
 
 from django.db import models
+from django.contrib import admin
+from datetime import datetime
 
-class VamdcSpeciesTypes(models.Model):
-    id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=450)
-    class Meta:
-        db_table = u'vamdc_species_types'
+class RecordStatus():
+    NEW = 0
+    ACTIVE = 1
+    DISABLED = 2
+    RECORD_STATUS_CHOICES = (
+      (NEW,		'New'),
+      (ACTIVE,	'Active'),
+      (DISABLED,	'Disabled'))
+    
+class SpeciesType():
+    ATOM = 1
+    MOLECULE = 2
+    SPECIES_CHOICES = (
+      (ATOM,'Atom'),
+      (MOLECULE,'Molecule'),
+      )
+    
+
+#class VamdcSpeciesTypes(models.Model):
+#    id = models.AutoField(primary_key=True)
+#    name = models.CharField(max_length=450)
+#    class Meta:
+#        db_table = u'vamdc_species_types'
 
 class VamdcMemberDatabases(models.Model):
     id = models.AutoField(primary_key=True)
-    short_name = models.CharField(max_length=60)
+    short_name = models.CharField(max_length=60, blank = False)
     description = models.CharField(max_length=765, blank=True)
-    ivo_identifier = models.CharField(max_length = 100, blank = True)
+    contact_email = models.CharField(max_length = 100, blank = False)
+    ivo_identifier = models.CharField(max_length = 100, blank = False, unique=True)
+    status = models.IntegerField(default=0, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
+    last_update_date = models.DateTimeField(auto_now = False, editable=False, default = datetime.now)
     class Meta:
         db_table = u'vamdc_member_databases'
+        
+class VamdcMemberDatabasesAdmin(admin.ModelAdmin):
+    def make_active(modeladmin, request, queryset):
+      queryset.update(status=RecordStatus.ACTIVE)
+    make_active.short_description = "Mark selected nodes as Active"
+      
+    
+    def make_disabled(modeladmin, request, queryset):
+      queryset.update(status=RecordStatus.DISABLED)
+    make_disabled.short_description = "Mark selected nodes as Disabled"
+    
+    #make_published.short_description = "Mark selected stories as published"
+    list_display = ('short_name','status','contact_email','last_update_date')
+    
+    actions = [make_active,make_disabled]
+
 
 class VamdcSpecies(models.Model):
     id = models.CharField(max_length=120, primary_key=True)
@@ -31,7 +70,8 @@ class VamdcSpecies(models.Model):
     stoichiometric_formula = models.CharField(max_length=450)
     mass_number = models.IntegerField()
     charge = models.IntegerField()
-    species_type = models.ForeignKey(VamdcSpeciesTypes, db_column='species_type')
+    #species_type = models.ForeignKey(VamdcSpeciesTypes, db_column='species_type')
+    species_type = models.IntegerField(default=0, blank = False, choices=SpeciesType.SPECIES_CHOICES)
     cml = models.CharField(max_length=765, blank=True)
     mol = models.CharField(max_length=765, blank=True)
     image = models.CharField(max_length=765, blank=True)

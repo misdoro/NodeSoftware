@@ -29,6 +29,12 @@ django.setup()
 
 #from nodes.VamdcSpeciesDB.node.models import *
 
-import node.update_functions
+import node.update_functions as update
 
-node.update_functions.process_species('CDMS')
+#node.update_functions.process_species('CDMS')
+
+#update.process_species
+
+update.update_nodes()
+
+update.query_active_nodes()
