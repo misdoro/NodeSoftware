@@ -14,27 +14,17 @@ def append_base_path(depth):
   sys.path.append(mypath)
   return mypath
 
-#print append_base_path(4)
-print append_base_path(2)
 
+#Add path to settings.py to system path
+append_base_path(2)
 
-
-
+#Initialize django
 import django
-
 import settings
 django.setup()
 
-#from django.contrib import admin
 
-#from nodes.VamdcSpeciesDB.node.models import *
-
+#Do the work on database
 import node.update_functions as update
-
-#node.update_functions.process_species('CDMS')
-
-#update.process_species
-
-update.update_nodes()
-
-update.query_active_nodes()
+update.update_nodes()       #Search for new nodes in the registry&update registered ones
+update.query_active_nodes() #Update species for nodes that are marked active
