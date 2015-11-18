@@ -27,7 +27,12 @@ class SpeciesType():
       (ATOM,'Atom'),
       (MOLECULE,'Molecule'),
       )
-    
+
+class MarkupTypes():
+    TEXT = 1
+    MARKUP_TYPES = (
+      (TEXT,'Plain text'),
+      )
 
 #class VamdcSpeciesTypes(models.Model):
 #    id = models.AutoField(primary_key=True)
@@ -145,11 +150,11 @@ class VamdcInchikeyExceptions(models.Model):
     class Meta:
         db_table = u'vamdc_inchikey_exceptions'
 
-class VamdcMarkupTypes(models.Model):
-    id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=90)
-    class Meta:
-        db_table = u'vamdc_markup_types'
+#class VamdcMarkupTypes(models.Model):
+#    id = models.AutoField(primary_key=True)
+#    name = models.CharField(max_length=90)
+#    class Meta:
+#        db_table = u'vamdc_markup_types'
 
 class VamdcMemberDatabaseIdentifiers(models.Model):
     id = models.AutoField(primary_key=True)
@@ -163,7 +168,7 @@ class VamdcSpeciesNames(models.Model):
     id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
     name = models.CharField(max_length=450)
-    markup_type = models.ForeignKey(VamdcMarkupTypes)
+    markup_type = models.IntegerField(default=0, blank = False, choices=MarkupTypes.MARKUP_TYPES)
     search_priority = models.IntegerField()
     created = models.DateTimeField()
     class Meta:
@@ -184,7 +189,8 @@ class VamdcSpeciesStructFormulae(models.Model):
     species = models.ForeignKey(VamdcSpecies)
     formula = models.CharField(max_length=450)
     formula_latex = models.CharField(max_length=450)
-    markup_type = models.ForeignKey(VamdcMarkupTypes)
+    #markup_type = models.ForeignKey(VamdcMarkupTypes)
+    markup_type = models.IntegerField(default=0, blank = False, choices=MarkupTypes.MARKUP_TYPES)
     search_priority = models.IntegerField()
     created = models.DateTimeField()
     class Meta:
