@@ -30,8 +30,14 @@ class SpeciesType():
 
 class MarkupTypes():
     TEXT = 1
+    HTML = 2
+    RST  = 3
+    LATEX= 4
     MARKUP_TYPES = (
-      (TEXT,'Plain text'),
+      (TEXT  ,'Plain text'),
+      (HTML  ,'HTML'),
+      (RST   ,'ReStructuredText'),
+      (LATEX ,'LaTeX'),
       )
 
 #class VamdcSpeciesTypes(models.Model):
@@ -48,6 +54,7 @@ class VamdcMemberDatabases(models.Model):
     ivo_identifier = models.CharField(max_length = 100, blank = False, unique=True)
     status = models.IntegerField(default=0, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
     last_update_date = models.DateTimeField(auto_now = False, editable=False, default = datetime.now)
+    #The last update by the cron job, may be thought as last seen date
     class Meta:
         db_table = u'vamdc_member_databases'
         
@@ -77,17 +84,20 @@ class VamdcSpecies(models.Model):
     charge = models.IntegerField()
     #species_type = models.ForeignKey(VamdcSpeciesTypes, db_column='species_type')
     species_type = models.IntegerField(default=0, blank = False, choices=SpeciesType.SPECIES_CHOICES)
-    cml = models.CharField(max_length=765, blank=True)
-    mol = models.CharField(max_length=765, blank=True)
-    image = models.CharField(max_length=765, blank=True)
+    cml = models.TextField(blank=True)
+    mol = models.TextField(blank=True)#Use TextField since the mol structure size may quickly become > few kB for complex organics
+    imageURL = models.CharField(max_length=765, blank=True)
     smiles = models.TextField(blank=True)
     created = models.DateTimeField()
-    member_database = models.ForeignKey(VamdcMemberDatabases, db_column='member_databases_id')
+    origin_member_database = models.ForeignKey(VamdcMemberDatabases, db_column='member_databases_id')
+    #The source database from which this species was originally inserted. 
+    #A value of zero indicates that the species information was generated or acquired from a source 
+    #that is not one of the VAMDC member databases.
     class Meta:
         db_table = u'vamdc_species'
 
     def symbol(self):
-        return self.stoichiometric_formula.replace('+','').replace('-','')
+        return self.stoichiometric_formula.replace('+','').replace('-','').replace('[0-9]','')
 
     def nuclear_charge(self):
         try:            
@@ -136,17 +146,27 @@ class VamdcSpecies(models.Model):
         """
         return self.species_foreign_ids()
 
-class VamdcConformers(models.Model):
-    id = models.AutoField(primary_key=True)
-    species = models.ForeignKey(VamdcSpecies)
-    conformer_name = models.CharField(max_length=450)
-    class Meta:
-        db_table = u'vamdc_conformers'
 
+#Update 2015.11: conformers table was never used, put everything in inchikey exceptions
+#This table is similar to the inchikey_exceptions table except that conformers are a well known exception to Standard InChIKey.
+#All conformers should be added to both this table and the inchikey_exceptions table.
+#class VamdcConformers(models.Model):
+#    id = models.AutoField(primary_key=True)
+#    species = models.ForeignKey(VamdcSpecies)
+#    conformer_name = models.CharField(max_length=450)
+#    class Meta:
+#        db_table = u'vamdc_conformers'
+
+#A table to store all exceptions to Standard InChIKey which will be used to differentiate species 
+#when Standard InChIKey is not sufficient to identify the species uniquely.  
+#This table was created in place of the vamdc_registry_suffixes table (which has been dropped) 
+#because it was not possible to agree a distinct set of reasons for departure from Standard InChIKey.  
+#This is because the reasons for departure from Standard InChIKey may be combined, 
+#and there may be other reasons for new cases for which we are not yet aware.
 class VamdcInchikeyExceptions(models.Model):
     id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
-    reason = models.CharField(max_length=765)
+    reason = models.CharField(max_length=1000)
     class Meta:
         db_table = u'vamdc_inchikey_exceptions'
 
@@ -156,14 +176,21 @@ class VamdcInchikeyExceptions(models.Model):
 #    class Meta:
 #        db_table = u'vamdc_markup_types'
 
+#A table to link the VAMDC species to the equivalent identifier in the source database.
 class VamdcMemberDatabaseIdentifiers(models.Model):
     id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
-    database_species_id = models.CharField(max_length=255, unique=True)#!!!!should it be unique?
+    database_species_id = models.CharField(max_length=255)#, unique=True!!!!It should not be marked unique, since collisions are possible
     member_database = models.ForeignKey(VamdcMemberDatabases)
     class Meta:
         db_table = u'vamdc_member_database_identifiers'
 
+
+#Contains all possible names for the species.
+#If the name is to be represented in HTML or reStructured Text, 
+#it should be added as a separate entry with the markup type set accordingly.
+#This is done so that the HTML or reStructured Text value of an item is always 
+#unique (i.e. does not get added more than once by accident)
 class VamdcSpeciesNames(models.Model):
     id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
@@ -174,23 +201,33 @@ class VamdcSpeciesNames(models.Model):
     class Meta:
         db_table = u'vamdc_species_names'
 
-class VamdcSpeciesResources(models.Model):
-    id = models.AutoField(primary_key=True)
-    species = models.ForeignKey(VamdcSpecies)
-    url = models.CharField(max_length=765)
-    description = models.CharField(max_length=450)
-    search_priority = models.IntegerField()
-    created = models.DateTimeField()
-    class Meta:
-        db_table = u'vamdc_species_resources'
+#It was never used on practice, disable for the moment
+#class VamdcSpeciesResources(models.Model):
+#    id = models.AutoField(primary_key=True)
+#    species = models.ForeignKey(VamdcSpecies)
+#    url = models.CharField(max_length=765)
+#    description = models.CharField(max_length=450)
+#    search_priority = models.IntegerField()
+#    created = models.DateTimeField()
+#    class Meta:
+#        db_table = u'vamdc_species_resources'
 
+#Many databases express the structural formula in different ways - especially when isotopologues are involved.  
+#This table allows all the different versions to coexist.
+#One potential problem with allowing HTML and REST formulations 
+#is the fact that the same HTML might exist for different ways of representing structural formula.  
+#E.g. C-14, (14)C and (14C) are all represented by the same HTML and reStructuredText.
+#Therefore, if the name is to be represented in HTML or reStructured Text, 
+#it should be added as a separate row with the markup type set accordingly.
+#Using a unique index on species ID, formula and markup type ensures that the plain text, 
+#HTML or reStructured Text value of an item is always unique 
+#(i.e. does not get added more than once by accident).
 class VamdcSpeciesStructFormulae(models.Model):
     id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
     formula = models.CharField(max_length=450)
-    formula_latex = models.CharField(max_length=450)
     #markup_type = models.ForeignKey(VamdcMarkupTypes)
-    markup_type = models.IntegerField(default=0, blank = False, choices=MarkupTypes.MARKUP_TYPES)
+    markup_type = models.IntegerField(default=1, blank = False, choices=MarkupTypes.MARKUP_TYPES)
     search_priority = models.IntegerField()
     created = models.DateTimeField()
     class Meta:
