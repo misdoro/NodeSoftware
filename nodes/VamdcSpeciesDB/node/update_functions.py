@@ -15,48 +15,6 @@ import traceback,sys
 
 from vamdclib.nodes import Nodelist
 
-##def count_protons(inchi):
-##    """
-##    Determines the charge from the inchi
-##    """
-##    start = inchi.find('/p')+2
-##    stop = inchi[start:].find('/') 
-
-##    if stop == -1:
-##        num_protons_str = inchi[start:]
-##    else:
-##        num_protons_str = inchi[start:start+stop]
-        
-##    if start == 1 or num_protons_str == '':
-##        num_protons = 0
-##    else:
-##        num_protons = int(num_protons_str)
-##    return num_protons
-
-##def get_charge(inchi):
-##    """
-##    Determines the charge from the inchi
-##    """
-##    start = inchi.find('/q')+2
-##    stop = inchi[start:].find('/')
-
-##    if stop == -1:
-##        charge_str = inchi[start:]
-##    else:
-##        charge_str = inchi[start:start+stop]
-
-##    charge = 0
-##    if start != 1:
-##        for q in charge_str.split(";"):
-##            if q != "":
-##                try:
-##                    charge += int(q)
-##                except:
-##                    print inchi
-
-##    num_protons = count_protons(inchi)
-    
-##    return charge + num_protons
 
 def update_nodes():
     print "query the registry for active nodes"
@@ -176,6 +134,7 @@ def process_species(vl_node, checkonly = False):
             atom.StoichiometricFormula = stoichiometricformula
         except:
             pass
+	  
         #------------------------------------------------------------
         # Insert specie into database (will be inserted only if not already present)
         id =insert_atom(atom, member_db_id = node_db_id, checkonly = checkonly)

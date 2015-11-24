@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><XSAMSData xmlns="http://vamdc.org/xml/xsams/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cml="http://www.xml-cml.org/schema" xsi:schemaLocation="http://vamdc.org/xml/xsams/1.0 http://vamdc.org/xml/xsams/1.0">
+  <Sources>
+    <Source sourceID="Bchianti-2015-11-24-17-11-29">
+      <Comments>
+    This Source is a self-reference.
+    It represents the database and the query that produced the xml document.
+    The sourceID contains a timestamp.
+    The full URL is given in the tag UniformResourceIdentifier but you need
+    to unescape ampersands and angle brackets to re-use it.
+    Query was: Select species where AtomNuclearCharge=6
+    </Comments>
+      <Year>2015</Year>
+      <Category>database</Category>
+      <UniformResourceIdentifier>http://ag02.ast.cam.ac.uk/chianti7-12.07/tap/sync?LANG=VSS2&amp;REQUEST=doQuery&amp;FORMAT=XSAMS&amp;QUERY=Select+species+where+AtomNuclearCharge%3D6</UniformResourceIdentifier>
+      <ProductionDate>2015-11-24</ProductionDate>
+      <Authors>
+        <Author>
+          <Name>N.N.</Name>
+        </Author>
+      </Authors>
+    </Source>
+  </Sources>
+  <Methods>
+    <Method methodID="Mchianti-EXP">
+      <Category>experiment</Category>
+      <Description/>
+    </Method>
+    <Method methodID="Mchianti-THEO">
+      <Category>theory</Category>
+      <Description/>
+    </Method>
+  </Methods>
+  <Species>
+    <Atoms>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>6</NuclearCharge>
+          <ElementSymbol>C</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <Ion speciesID="Xchianti-1006">
+            <IonCharge>1</IonCharge>
+            <InChI>InChI=1S/C/q+1</InChI>
+            <InChIKey>GKDCRJWYAGBLFY-UHFFFAOYSA-N</InChIKey>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>6</NuclearCharge>
+          <ElementSymbol>C</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <Ion speciesID="Xchianti-2006">
+            <IonCharge>2</IonCharge>
+            <InChI>InChI=1S/C/q+2</InChI>
+            <InChIKey>VDYBPBLQDTVBRT-UHFFFAOYSA-N</InChIKey>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>6</NuclearCharge>
+          <ElementSymbol>C</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <Ion speciesID="Xchianti-3006">
+            <IonCharge>3</IonCharge>
+            <InChI>InChI=1S/C/q+3</InChI>
+            <InChIKey>JFJOCVYVRDPHGW-UHFFFAOYSA-N</InChIKey>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>6</NuclearCharge>
+          <ElementSymbol>C</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <Ion speciesID="Xchianti-4006">
+            <IonCharge>4</IonCharge>
+            <InChI>InChI=1S/C/q+4</InChI>
+            <InChIKey>CMFFRNMPXYSZIX-UHFFFAOYSA-N</InChIKey>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>6</NuclearCharge>
+          <ElementSymbol>C</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <Ion speciesID="Xchianti-5006">
+            <IonCharge>5</IonCharge>
+            <InChI>InChI=1S/C/q+5</InChI>
+            <InChIKey>QCSOSLLFNRCMCO-UHFFFAOYSA-N</InChIKey>
+          </Ion>
+        </Isotope>
+      </Atom>
+    </Atoms>
+  </Species>
+  <Processes>
+    <Radiative/>
+  </Processes>
+</XSAMSData>
