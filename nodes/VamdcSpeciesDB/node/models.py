@@ -89,6 +89,7 @@ class VamdcSpecies(models.Model):
     imageURL = models.CharField(max_length=765, blank=True)
     smiles = models.TextField(blank=True)
     created = models.DateTimeField()
+    status = models.IntegerField(default=0, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
     origin_member_database = models.ForeignKey(VamdcMemberDatabases, db_column='member_databases_id')
     #The source database from which this species was originally inserted. 
     #A value of zero indicates that the species information was generated or acquired from a source 
@@ -182,6 +183,7 @@ class VamdcMemberDatabaseIdentifiers(models.Model):
     species = models.ForeignKey(VamdcSpecies)
     database_species_id = models.CharField(max_length=255)#, unique=True!!!!It should not be marked unique, since collisions are possible
     member_database = models.ForeignKey(VamdcMemberDatabases)
+    last_seen_dateTime = models.DateTimeField(auto_now = False, editable=False, default = datetime.now)
     class Meta:
         db_table = u'vamdc_member_database_identifiers'
 
