@@ -369,7 +369,7 @@ def insert_atom(atom, member_db_id = 0, checkonly = False):
         #else:
         #    specie.inchi = 'InChI='+atom.InChI
         specie.inchikey = atom.InChIKey
-        specie.inchikey_duplicate_counter = 1
+        #specie.inchikey_duplicate_counter = 1
         specie.stoichiometric_formula = atom.StoichiometricFormula
         specie.species_type = SpeciesType.ATOM
         specie.created = datetime.now()

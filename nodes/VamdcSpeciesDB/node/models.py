@@ -8,7 +8,6 @@
 # into your database.
 
 from django.db import models
-from django.contrib import admin
 from datetime import datetime
 
 class RecordStatus():
@@ -46,7 +45,7 @@ class MarkupTypes():
 #    class Meta:
 #        db_table = u'vamdc_species_types'
 
-class VamdcMemberDatabases(models.Model):
+class VamdcNodes(models.Model):
     id = models.AutoField(primary_key=True)
     short_name = models.CharField(max_length=60, blank = False)
     description = models.CharField(max_length=765, blank=True)
@@ -56,41 +55,25 @@ class VamdcMemberDatabases(models.Model):
     last_update_date = models.DateTimeField(auto_now = False, editable=False, default = datetime.now)
     #The last update by the cron job, may be thought as last seen date
     class Meta:
-        db_table = u'vamdc_member_databases'
-        
-class VamdcMemberDatabasesAdmin(admin.ModelAdmin):
-    def make_active(modeladmin, request, queryset):
-      queryset.update(status=RecordStatus.ACTIVE)
-    make_active.short_description = "Mark selected nodes as Active"
-      
-    
-    def make_disabled(modeladmin, request, queryset):
-      queryset.update(status=RecordStatus.DISABLED)
-    make_disabled.short_description = "Mark selected nodes as Disabled"
-    
-    #make_published.short_description = "Mark selected stories as published"
-    list_display = ('short_name','status','contact_email','last_update_date')
-    
-    actions = [make_active,make_disabled]
-
+        db_table = u'vamdc_nodes'
 
 class VamdcSpecies(models.Model):
     id = models.CharField(max_length=120, primary_key=True)
     inchi = models.TextField()
     inchikey = models.CharField(max_length=90)
-    inchikey_duplicate_counter = models.IntegerField()#!!!WTF, why was it unique?unique=True)
-    stoichiometric_formula = models.CharField(max_length=450)
-    mass_number = models.IntegerField()
-    charge = models.IntegerField()
+    #inchikey_duplicate_counter = models.IntegerField()#!!!WTF, why was it unique?unique=True)
+    stoichiometric_formula = models.CharField(max_length=450)#Atom symbol or molecule stoichiometric_formula
+    mass_number = models.IntegerField()#atomic or molecular mass
+    charge = models.IntegerField()#ion charge
     #species_type = models.ForeignKey(VamdcSpeciesTypes, db_column='species_type')
     species_type = models.IntegerField(default=0, blank = False, choices=SpeciesType.SPECIES_CHOICES)
     cml = models.TextField(blank=True)
     mol = models.TextField(blank=True)#Use TextField since the mol structure size may quickly become > few kB for complex organics
     imageURL = models.CharField(max_length=765, blank=True)
     smiles = models.TextField(blank=True)
-    created = models.DateTimeField()
+    created = models.DateTimeField(auto_now = False, editable=False, default = datetime.now)
     status = models.IntegerField(default=0, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
-    origin_member_database = models.ForeignKey(VamdcMemberDatabases, db_column='member_databases_id')
+    origin_member_database = models.ForeignKey(VamdcNodes, db_column='member_databases_id')
     #The source database from which this species was originally inserted. 
     #A value of zero indicates that the species information was generated or acquired from a source 
     #that is not one of the VAMDC member databases.
@@ -178,14 +161,14 @@ class VamdcInchikeyExceptions(models.Model):
 #        db_table = u'vamdc_markup_types'
 
 #A table to link the VAMDC species to the equivalent identifier in the source database.
-class VamdcMemberDatabaseIdentifiers(models.Model):
+class VamdcNodeSpecies(models.Model):
     id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
     database_species_id = models.CharField(max_length=255)#, unique=True!!!!It should not be marked unique, since collisions are possible
-    member_database = models.ForeignKey(VamdcMemberDatabases)
+    member_database = models.ForeignKey(VamdcNodes)
     last_seen_dateTime = models.DateTimeField(auto_now = False, editable=False, default = datetime.now)
     class Meta:
-        db_table = u'vamdc_member_database_identifiers'
+        db_table = u'vamdc_node_species'
 
 
 #Contains all possible names for the species.

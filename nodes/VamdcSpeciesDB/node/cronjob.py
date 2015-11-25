@@ -25,6 +25,8 @@ django.setup()
 
 
 #Do the work on database
-import node.update_functions as update
+import node.import_functions as update
+
 update.update_nodes()       #Search for new nodes in the registry&update registered ones
+
 update.query_active_nodes() #Update species for nodes that are marked active
