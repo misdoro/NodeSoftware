@@ -243,14 +243,14 @@ class VamdcDictAtoms(models.Model):
     !!! THIS IS NOT PART OF THE OFFICIAL VAMDC SPECIES DB !!!
     """
     id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=50)
+    #name = models.CharField(max_length=50)
     symbol = models.CharField(max_length=10)
-    element = models.CharField(max_length=10)
+    #element = models.CharField(max_length=10)
     mass_number = models.IntegerField()
-    mass = models.FloatField()
-    abundance = models.FloatField()
+    #mass = models.FloatField()
+    #abundance = models.FloatField()
     most_abundant = models.IntegerField()
-    mass_reference = models.IntegerField()
+    #mass_reference = models.IntegerField()
     nuclear_charge = models.IntegerField()
     class Meta:
         db_table = u'vamdc_dict_atoms'
