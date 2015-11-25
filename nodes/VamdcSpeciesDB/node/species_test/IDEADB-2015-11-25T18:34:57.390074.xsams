@@ -1,0 +1,2644 @@
+<?xml version="1.0" encoding="UTF-8"?><XSAMSData xmlns="http://vamdc.org/xml/xsams/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cml="http://www.xml-cml.org/schema" xsi:schemaLocation="http://vamdc.org/xml/xsams/1.0 http://vamdc.org/xml/xsams/1.0">
+  <Sources>
+    <Source sourceID="BIDEADB-2015-11-25-18-34-57">
+      <Comments>
+    This Source is a self-reference.
+    It represents the database and the query that produced the xml document.
+    The sourceID contains a timestamp.
+    The full URL is given in the tag UniformResourceIdentifier but you need
+    to unescape ampersands and angle brackets to re-use it.
+    Query was: Select species
+    </Comments>
+      <Year>2015</Year>
+      <Category>database</Category>
+      <UniformResourceIdentifier>http://ideadb.uibk.ac.at/tap/sync?LANG=VSS2&amp;REQUEST=doQuery&amp;FORMAT=XSAMS&amp;QUERY=Select+species</UniformResourceIdentifier>
+      <ProductionDate>2015-11-25</ProductionDate>
+      <Authors>
+        <Author>
+          <Name>N.N.</Name>
+        </Author>
+      </Authors>
+    </Source>
+    <Source sourceID="BIDEADB-3">
+      <Authors>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Matejcik, Stefan</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Märk, Tilmann</Name>
+        </Author>
+        <Author>
+          <Name>Ptasinska, Sylwia</Name>
+        </Author>
+        <Author>
+          <Name>Cingel, Michael</Name>
+        </Author>
+      </Authors>
+      <Title>Electron attachment to the DNA bases thymine and cytosine</Title>
+      <Category>journal</Category>
+      <Year>2003</Year>
+      <Volume>377</Volume>
+      <PageBegin>74</PageBegin>
+      <PageEnd>80</PageEnd>
+      <UniformResourceIdentifier>http://www.sciencedirect.com/science/article/pii/S0009261403010960</UniformResourceIdentifier>
+      <DigitalObjectIdentifier>10.1016/S0009-2614(03)01096-0</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-4">
+      <Authors>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Probst, Michael</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Märk, Tilmann</Name>
+        </Author>
+        <Author>
+          <Name>Mauracher, Andreas</Name>
+        </Author>
+      </Authors>
+      <Title>Site selective cleavage of purine derivatives by capture of low energy electrons</Title>
+      <Category>journal</Category>
+      <Year>2008</Year>
+      <Volume>78</Volume>
+      <PageBegin>1</PageBegin>
+      <PageEnd>5</PageEnd>
+      <DigitalObjectIdentifier>10.1088/0031-8949/78/05/058101</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-5">
+      <Authors>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Gstir, Bettina</Name>
+        </Author>
+        <Author>
+          <Name>Hanel, Gernot</Name>
+        </Author>
+        <Author>
+          <Name>Probst, Michael</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Märk, Tilmann</Name>
+        </Author>
+        <Author>
+          <Name>Ptasinska, Sylwia</Name>
+        </Author>
+      </Authors>
+      <Title>Electron attachment to gas-phase uracil</Title>
+      <Category>journal</Category>
+      <Year>2004</Year>
+      <Volume>120</Volume>
+      <PageBegin>6557</PageBegin>
+      <PageEnd>6565</PageEnd>
+      <DigitalObjectIdentifier>10.1063/1.1649724</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-7">
+      <Authors>
+        <Author>
+          <Name>Gschließer, David</Name>
+        </Author>
+        <Author>
+          <Name>Bartl, Peter</Name>
+        </Author>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Probst, Michael</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Märk, Tilmann</Name>
+        </Author>
+        <Author>
+          <Name>Huber, Stefan</Name>
+        </Author>
+        <Author>
+          <Name>Vizcaino, Violaine</Name>
+        </Author>
+      </Authors>
+      <Title>Dissociative Electron Attachment to ß-Alanine</Title>
+      <Category>journal</Category>
+      <Year>2011</Year>
+      <Volume>12</Volume>
+      <PageBegin>1272</PageBegin>
+      <PageEnd>1279</PageEnd>
+      <DigitalObjectIdentifier>10.1002/cphc.201001014</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-8">
+      <Authors>
+        <Author>
+          <Name>Gschließer, David</Name>
+        </Author>
+        <Author>
+          <Name>Bartl, Peter</Name>
+        </Author>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Probst, Michael</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Märk, Tilmann</Name>
+        </Author>
+        <Author>
+          <Name>Ptasinska, Sylwia</Name>
+        </Author>
+        <Author>
+          <Name>Mauracher, Andreas</Name>
+        </Author>
+        <Author>
+          <Name>Vizcaino, Violaine</Name>
+        </Author>
+        <Author>
+          <Name>Alizadeh, Elahe</Name>
+        </Author>
+        <Author>
+          <Name>Hager, Michaela</Name>
+        </Author>
+        <Author>
+          <Name>Edtbauer, Achim</Name>
+        </Author>
+        <Author>
+          <Name>Mason, Nigel</Name>
+        </Author>
+      </Authors>
+      <Title>Bond dissociation of the dipeptide dialanine and its derivative alanine anhydride induced by low energy electrons</Title>
+      <Category>journal</Category>
+      <Year>2011</Year>
+      <Volume>134</Volume>
+      <PageBegin>1</PageBegin>
+      <PageEnd>9</PageEnd>
+      <DigitalObjectIdentifier>10.1063/1.3544217</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-9">
+      <Authors>
+        <Author>
+          <Name>da Silva, Filipe</Name>
+        </Author>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Mauracher, Andreas</Name>
+        </Author>
+        <Author>
+          <Name>Postler, Johannes</Name>
+        </Author>
+        <Author>
+          <Name>Matias, Carolina</Name>
+        </Author>
+        <Author>
+          <Name>Goulart, Marcelo</Name>
+        </Author>
+        <Author>
+          <Name>Limão-Vieira, Paulo</Name>
+        </Author>
+      </Authors>
+      <Title>Dissociative electron attachment to the nitroamine HMX (octahydro- 1,3,5,7-tetranitro-1,3,5,7-tetrazocine)</Title>
+      <Category>journal</Category>
+      <Year>2013</Year>
+      <Volume>24</Volume>
+      <PageBegin>744</PageBegin>
+      <PageEnd>752</PageEnd>
+      <UniformResourceIdentifier>http://link.springer.com/article/10.1007%2Fs13361-013-0588-y</UniformResourceIdentifier>
+      <DigitalObjectIdentifier>10.1007/s13361-013-0588-y</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-10">
+      <Authors>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Märk, Tilmann</Name>
+        </Author>
+        <Author>
+          <Name>Mauracher, Andreas</Name>
+        </Author>
+        <Author>
+          <Name>Sulzer, Philipp</Name>
+        </Author>
+        <Author>
+          <Name>Bacher, Arntraud</Name>
+        </Author>
+      </Authors>
+      <Title>Free electron attachment to the chloromethane CHCl3</Title>
+      <Category>journal</Category>
+      <Year>2007</Year>
+      <Volume>265</Volume>
+      <PageBegin>139</PageBegin>
+      <PageEnd>145</PageEnd>
+      <UniformResourceIdentifier>http://ac.els-cdn.com/S138738060700036X/1-s2.0-S138738060700036X-main.pdf?_tid=52fed736-74fc-11e2-9a8e-00000aacb35f&amp;acdnat=1360663964_abbc8fd43c6ff547c477bb7648e5250d</UniformResourceIdentifier>
+      <DigitalObjectIdentifier>10.1016/j.ijms.2007.01.021 </DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-11">
+      <Authors>
+        <Author>
+          <Name>Puschnigg, Benjamin</Name>
+        </Author>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Probst, Michael</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Huber, Stefan</Name>
+        </Author>
+        <Author>
+          <Name>Vizcaino, Violaine</Name>
+        </Author>
+        <Author>
+          <Name>Fabrikant, Ilya</Name>
+        </Author>
+        <Author>
+          <Name>Gallup, Gordon</Name>
+        </Author>
+        <Author>
+          <Name>Illenberger, Eugen</Name>
+        </Author>
+      </Authors>
+      <Title>Hydrogen loss in aminobutanoic acid isomers by the sigma* resonance formed in electron capture</Title>
+      <Category>journal</Category>
+      <Year>2012</Year>
+      <Volume>14</Volume>
+      <PageBegin>1</PageBegin>
+      <PageEnd>12</PageEnd>
+      <UniformResourceIdentifier>http://iopscience.iop.org/1367-2630/14/4/043017/pdf/1367-2630_14_4_043017.pdf</UniformResourceIdentifier>
+      <DigitalObjectIdentifier>10.1088/1367-2630/14/4/043017</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-13">
+      <Authors>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Matejcik, Stefan</Name>
+        </Author>
+        <Author>
+          <Name>Probst, Michael</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Märk, Tilmann</Name>
+        </Author>
+        <Author>
+          <Name>Ptasinska, Sylwia</Name>
+        </Author>
+        <Author>
+          <Name>Mauracher, Andreas</Name>
+        </Author>
+        <Author>
+          <Name>Sulzer, Philipp</Name>
+        </Author>
+        <Author>
+          <Name>Bacher, Arntraud</Name>
+        </Author>
+        <Author>
+          <Name>Zappa, Fabio</Name>
+        </Author>
+        <Author>
+          <Name>Beikircher, Manuel</Name>
+        </Author>
+        <Author>
+          <Name>Wendt, Nina</Name>
+        </Author>
+        <Author>
+          <Name>Aleem, Abid</Name>
+        </Author>
+        <Author>
+          <Name>Rondino, F</Name>
+        </Author>
+      </Authors>
+      <Title>Identification of Isomers of Nitrotoluene via Free Electron Attachment</Title>
+      <Category>journal</Category>
+      <Year>2007</Year>
+      <Volume>79</Volume>
+      <PageBegin>6585</PageBegin>
+      <PageEnd>6591</PageEnd>
+      <UniformResourceIdentifier>http://pubs.acs.org/doi/abs/10.1021/ac070656b</UniformResourceIdentifier>
+      <DigitalObjectIdentifier>10.1021/ac070656b</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-15">
+      <Authors>
+        <Author>
+          <Name>Szymanska, Ewelina</Name>
+        </Author>
+        <Author>
+          <Name>Prabhudesai, Vaibhav</Name>
+        </Author>
+        <Author>
+          <Name>Mason, Nigel</Name>
+        </Author>
+        <Author>
+          <Name>Krishnakumar, E</Name>
+        </Author>
+      </Authors>
+      <Title>Dissociative electron attachment to acetaldehyde, CH3CHO. A laboratory study using the velocity map imaging technique</Title>
+      <Category>journal</Category>
+      <Year>2013</Year>
+      <Volume>15</Volume>
+      <PageBegin>998</PageBegin>
+      <PageEnd>1005</PageEnd>
+      <UniformResourceIdentifier>http://pubs.rsc.org/en/Content/ArticleLanding/2013/CP/c2cp42966g#!divAbstract</UniformResourceIdentifier>
+      <DigitalObjectIdentifier>10.1039/c2cp42966g</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-16">
+      <Authors>
+        <Author>
+          <Name>Szymanska, Ewelina</Name>
+        </Author>
+        <Author>
+          <Name>Mason, Nigel</Name>
+        </Author>
+        <Author>
+          <Name>Krishnakumar, E</Name>
+        </Author>
+        <Author>
+          <Name>Cadez, Iztok</Name>
+        </Author>
+      </Authors>
+      <Title>Electron impact induced anion production in acetylene</Title>
+      <Category>journal</Category>
+      <Year>2014</Year>
+      <Volume>16</Volume>
+      <PageBegin>3425</PageBegin>
+      <PageEnd>3432</PageEnd>
+      <UniformResourceIdentifier>http://pubs.rsc.org/en/Content/ArticleLanding/2014/CP/c3cp54459a#!divAbstract</UniformResourceIdentifier>
+      <DigitalObjectIdentifier>10.1039/C3CP54459A</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-17">
+      <Authors>
+        <Author>
+          <Name>Denifl, Stephan</Name>
+        </Author>
+        <Author>
+          <Name>Scheier, Paul</Name>
+        </Author>
+        <Author>
+          <Name>Mauracher, Andreas</Name>
+        </Author>
+        <Author>
+          <Name>Matias, Carolina</Name>
+        </Author>
+        <Author>
+          <Name>Szymanska, Ewelina</Name>
+        </Author>
+        <Author>
+          <Name>Mason, Nigel</Name>
+        </Author>
+        <Author>
+          <Name>Krishnakumar, E</Name>
+        </Author>
+      </Authors>
+      <Title>Dissociative electron attachment and dipolar dissociation in ethylene</Title>
+      <Category>journal</Category>
+      <Year>2014</Year>
+      <Volume>365-36</Volume>
+      <PageBegin>356</PageBegin>
+      <PageEnd>364</PageEnd>
+      <UniformResourceIdentifier>http://www.sciencedirect.com/science/article/pii/S1387380614000104</UniformResourceIdentifier>
+      <DigitalObjectIdentifier>10.1016/j.ijms.2014.01.006</DigitalObjectIdentifier>
+    </Source>
+    <Source sourceID="BIDEADB-18">
+      <Authors>
+        <Author>
+          <Name>Mason, Nigel</Name>
+        </Author>
+        <Author>
+          <Name>Itikawa, Yukikazu</Name>
+        </Author>
+      </Authors>
+      <Title>Cross Sections for Electron Collisions with Water Molecules</Title>
+      <Category>journal</Category>
+      <Year>2004</Year>
+      <Volume>34</Volume>
+      <PageBegin>1</PageBegin>
+      <PageEnd>22</PageEnd>
+      <UniformResourceIdentifier>http://scitation.aip.org/content/aip/journal/jpcrd/34/1/10.1063/1.1799251</UniformResourceIdentifier>
+      <DigitalObjectIdentifier>10.1063/1.1799251</DigitalObjectIdentifier>
+    </Source>
+  </Sources>
+  <Species>
+    <Atoms>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>8</NuclearCharge>
+          <ElementSymbol>O</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>16</MassNumber>
+            <Mass>
+              <Value units="amu">15.9994</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-14">
+            <IonCharge>0</IonCharge>
+            <InChI>InChI=1S/O</InChI>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>23</NuclearCharge>
+          <ElementSymbol>C2H3O</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>43</MassNumber>
+            <Mass>
+              <Value units="amu">43.04462</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-65">
+            <IonCharge>0</IonCharge>
+            <InChI/>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>17</NuclearCharge>
+          <ElementSymbol>Cl</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>35</MassNumber>
+            <Mass>
+              <Value units="amu">35.453</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-98">
+            <IonCharge>-1</IonCharge>
+            <InChI>InChI=1S/Cl</InChI>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>7</NuclearCharge>
+          <ElementSymbol>CH</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>13</MassNumber>
+            <Mass>
+              <Value units="amu">13.01864</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-105">
+            <IonCharge>-1</IonCharge>
+            <InChI>InChI=1S/CH/h1H</InChI>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>6</NuclearCharge>
+          <ElementSymbol>C</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>12</MassNumber>
+            <Mass>
+              <Value units="amu">12.0107</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-106">
+            <IonCharge>-1</IonCharge>
+            <InChI>InChI=1S/C</InChI>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>1</NuclearCharge>
+          <ElementSymbol>H</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>1</MassNumber>
+            <Mass>
+              <Value units="amu">1.00794</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-107">
+            <IonCharge>0</IonCharge>
+            <InChI>InChI=1S/H</InChI>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge/>
+          <ElementSymbol>CH3</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>15</MassNumber>
+            <Mass>
+              <Value units="amu">15.03452</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-132">
+            <IonCharge>-1</IonCharge>
+            <InChI/>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge/>
+          <ElementSymbol>C2H</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>25</MassNumber>
+            <Mass>
+              <Value units="amu">25.02934</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-133">
+            <IonCharge>-1</IonCharge>
+            <InChI/>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge/>
+          <ElementSymbol>C2HO</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>41</MassNumber>
+            <Mass>
+              <Value units="amu">41.02874</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-134">
+            <IonCharge>-1</IonCharge>
+            <InChI/>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge/>
+          <ElementSymbol>H</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>1</MassNumber>
+            <Mass>
+              <Value units="amu">1.00794</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-137">
+            <IonCharge>-1</IonCharge>
+            <InChI/>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge/>
+          <ElementSymbol>C2</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>24</MassNumber>
+            <Mass>
+              <Value units="amu">24.0214</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-136">
+            <IonCharge>-1</IonCharge>
+            <InChI/>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>1</NuclearCharge>
+          <ElementSymbol>H</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>1</MassNumber>
+            <Mass>
+              <Value units="amu">1.00794</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-139">
+            <IonCharge>-1</IonCharge>
+            <InChI>InChI=1S/H</InChI>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+      <Atom>
+        <ChemicalElement>
+          <NuclearCharge>15</NuclearCharge>
+          <ElementSymbol>C2H3</ElementSymbol>
+        </ChemicalElement>
+        <Isotope>
+          <IsotopeParameters>
+            <MassNumber>27</MassNumber>
+            <Mass>
+              <Value units="amu">27.04522</Value>
+            </Mass>
+          </IsotopeParameters>
+          <Ion speciesID="XIDEADB-141">
+            <IonCharge>-1</IonCharge>
+            <InChI>InChI=1S/C2H3/c1-2/h1H,2H2</InChI>
+            <InChIKey/>
+          </Ion>
+        </Isotope>
+      </Atom>
+    </Atoms>
+    <Molecules>
+      <Molecule speciesID="XIDEADB-8">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H5N3O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H5N3O</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Cytosine</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C4H5N3O/c5-3-1-2-6-4(8)7-3/h1-2H,(H3,5,6,7,8)</InChI>
+          <InChIKey>OPTASPLRGRRNAP-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>71-30-7</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">111.102</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-11">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3HN2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3HN2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">65.05344</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-10">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H3N2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H3N2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">67.06932</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-9">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H4N3O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H4N3O</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <ChemicalName>
+            <Value>Cytosinide</Value>
+          </ChemicalName>
+          <InChIKey/>
+          <CASRegistryNumber>
+            <Value>19224-69-2</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">110.09406</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-12">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>OCN</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>OCN</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">42.0168</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-13">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CN</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CN</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">26.0174</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-17">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H6N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H6N2O2</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Thymine</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C5H6N2O2/c1-3-2-6-5(9)7-4(3)8/h2H,1H3,(H2,6,7,8,9)</InChI>
+          <InChIKey>RWQNBRDOKXIBIV-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>65-71-4</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">126.11334</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-18">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H5N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H5N2O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <CASRegistryNumber>
+            <Value>61529-55-3</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">125.1054</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-19">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H4N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H4N2O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">124.09746</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-20">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H5N2O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H5N2O</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">97.0953</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-24">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C2H3N2O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C2H3N2O</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">71.05802</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-25">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H2NO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H2NO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">68.05408</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-26">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H4N</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H4N</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">54.07056</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-27">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H5N5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H5N5</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Adenine</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C5H5N5/c6-4-3-5(9-1-7-3)10-2-8-4/h1-2H,(H3,6,7,8,9,10)</InChI>
+          <InChIKey>GFFGJBXGBJISGV-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>73-24-5</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">135.1267</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-28">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H4N5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H4N5</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">134.11876</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-29">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H7N5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H7N5</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>9-Methyladenine</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C6H7N5/c1-11-3-10-4-5(7)8-2-9-6(4)11/h2-3H,1H3,(H2,7,8,9)</InChI>
+          <InChIKey>WRXCXOUDSPTXNX-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>700-00-5</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">149.15328</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-31">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H6N5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H6N5</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">148.14534</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-32">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H4DN5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H4DN5</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Adenine-2-d1</Value>
+          </ChemicalName>
+          <InChIKey/>
+          <CASRegistryNumber>
+            <Value>109923-52-6</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">136.132861778</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-33">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H3DN5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H3DN5</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">135.124921778</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-34">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H9N5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H9N5</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>6-dimethyladenine</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C7H9N5/c1-12(2)7-5-6(9-3-8-5)10-4-11-7/h3-4H,1-2H3,(H,8,9,10,11)</InChI>
+          <InChIKey>BVIAOQMSVZHOJM-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>938-55-6</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">163.17986</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-35">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H8N5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H8N5</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">162.17192</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-36">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H4N4</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H4N4</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Purine</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C5H4N4/c1-4-5(8-2-6-1)9-3-7-4/h1-3H,(H,6,7,8,9)</InChI>
+          <InChIKey>KDCGOANMDULRCW-UHFFFAOYSA-N</InChIKey>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">120.11206</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-37">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H3N4</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H3N4</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">119.10412</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-38">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H3N5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H3N5</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">133.11082</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-39">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H2DN5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H2DN5</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">134.116981778</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-40">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H5N5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H5N5</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">147.1374</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-42">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H2N5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H2N5</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">132.10288</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-43">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5HN4</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5HN4</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">117.08824</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-44">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H4N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H4N2O2</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Uracil</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C4H4N2O2/c7-3-1-2-5-4(8)6-3/h1-2H,(H2,5,6,7,8)</InChI>
+          <InChIKey>ISAKRJDGNUQOIC-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>66-22-8</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">112.08676</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-46">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3HNO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3HNO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">67.04614</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-47">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3NO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3NO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">66.0382</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-48">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3N</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3N</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">50.0388</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-49">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H3N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H3N2O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">111.07882</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-50">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H2N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H2N2O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">110.07088</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-51">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H3N2O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H3N2O</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">83.06872</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-53">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H6NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H6NO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">88.08524</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-54">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H7NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H7NO2</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>ß-Alanine</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C3H7NO2/c4-2-1-3(5)6/h1-2,4H2,(H,5,6)</InChI>
+          <InChIKey>UCMIRNVEIXFBKS-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>107-95-9</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">89.09318</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-55">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H5NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H5NO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">87.0773</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-56">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H4NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H4NO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">86.06936</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-57">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H3O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H3O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">71.05472</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-59">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H4NO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H4NO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">70.06996</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-60">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CH2COOH</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CH2COOH</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">59.04402</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-61">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CH2COO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CH2COO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">58.03608</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-62">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>COOH</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>COOH</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">45.01744</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-63">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C2H6N</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C2H6N</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">44.07574</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-64">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">44.0095</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-66">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>NCO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>NCO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">42.0168</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-67">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C2H4N</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C2H4N</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">42.05986</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-68">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CHCO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CHCO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">41.02874</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-69">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C2H2N</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C2H2N</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">40.04398</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-70">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>OH</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>OH</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">17.00734</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-71">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>NH2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>NH2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">16.02258</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-81">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H12N2O3</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H12N2O3</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Dialanine</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C6H12N2O3/c1-3(7)5(9)8-4(2)6(10)11/h3-4H,7H2,1-2H3,(H,8,9)(H,10,11)</InChI>
+          <InChIKey>DEFJQIDDEAULHB-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>2867-20-1</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">160.17108</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-82">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H11N2O3</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H11N2O3</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">159.16314</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-83">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H10N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H10N2O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">142.1558</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-84">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H11N2O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H11N2O</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">115.15364</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-85">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H9N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H9N2O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">141.14786</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-86">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H8NO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H8NO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">98.12312</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-87">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H7N2O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H7N2O</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">87.10048</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-88">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H4O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H4O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">72.06266</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-90">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H10N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H10N2O2</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Alanine anhydride</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C6H10N2O2/c1-3-5(9)8-4(2)6(10)7-3/h3-4H,1-2H3,(H,7,10)(H,8,9)/t3-,4-/m0/s1</InChI>
+          <InChIKey>WWISPHBAYBECQZ-IMJSIDKUSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>5625-46-7</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">142.1558</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-92">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H7N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H7N2O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">139.13198</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-93">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H8N2O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H8N2O</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">124.14052</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-94">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H9NO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H9NO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">99.13106</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-80">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H8N8O8</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H8N8O8</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>HMX (octahydro-1,3,5,7-tetranitro-1,3,5,7-tetrazocine)</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C4H8N8O8/c13-9(14)5-1-6(10(15)16)3-8(12(19)20)4-7(2-5)11(17)18/h1-4H2</InChI>
+          <InChIKey>UZGLIIJVICEWHF-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>2691-41-0</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">296.15512</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-89">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H8N7O6</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H8N7O6</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">250.14962</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-95">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C5H7NO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C5H7NO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">97.11518</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-91">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H8N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H8N2O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">140.13992</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-96">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H5NO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H5NO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">71.0779</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-97">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CHCl3</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CHCl3</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Chloromethane</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/CHCl3/c2-1(3)4/h1H</InChI>
+          <InChIKey>HEDRZPFGACZZDS-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>67-66-3</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">119.37764</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-99">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CHCl2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CHCl2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChI>InChI=1S/CHCl2/c2-1-3/h1H</InChI>
+          <InChIKey>ZJULYDCRWUEPTK-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>3474-12-2</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">83.92464</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-100">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CCl2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CCl2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChI>InChI=1S/CCl2/c2-1-3</InChI>
+          <InChIKey>PFBUKDPBVNJDEW-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>1605-72-7</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">82.9167</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-101">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>HCl2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>HCl2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">71.91394</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-102">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>Cl2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>Cl2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChI>InChI=1S/Cl2/c1-2</InChI>
+          <InChIKey>KZBUYRJDOAKODT-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>7782-50-5</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">70.906</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-103">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CHCl</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CHCl</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChI>InChI=1S/CHCl/c1-2/h1H</InChI>
+          <InChIKey>LKYXEULZVGJVTG-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>2108-20-5</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">48.47164</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-104">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CCl</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CCl</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <ChemicalName>
+            <Value>Chloromethylidyne</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/CCl/c1-2</InChI>
+          <InChIKey>BBFYMZCRBPASGM-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>3889-76-7</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">47.4637</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-108">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H9NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H9NO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <ChemicalName>
+            <Value>Alpha-aminobutanoic acid</Value>
+          </ChemicalName>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">103.11976</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-111">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H7NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H7NO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <ChemicalName>
+            <Value>4-Nitrotoluene</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C7H7NO2/c1-6-2-4-7(5-3-6)8(9)10/h2-5H,1H3</InChI>
+          <InChIKey>ZPTVNYMJQHSSEA-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>99-99-0</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">137.13598</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-110">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H7NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H7NO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <ChemicalName>
+            <Value>3-Nitrotoluene</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C7H7NO2/c1-6-3-2-4-7(5-6)8(9)10/h2-5H,1H3</InChI>
+          <InChIKey>QZYHIOPPLUPUJF-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>99-08-1</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">137.13598</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-109">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H7NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H7NO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <ChemicalName>
+            <Value>2-Nitrotoluene</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C7H7NO2/c1-6-4-2-3-5-7(6)8(9)10/h2-5H,1H3</InChI>
+          <InChIKey>PLAZTCDQAHEYBI-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>88-72-2</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">137.13598</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-112">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H6NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H6NO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">136.12804</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-113">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H6NO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H6NO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">120.12864</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-114">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H5NO</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H5NO</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">119.1207</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-115">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H7O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H7O</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">107.12988</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-116">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H6O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H6O</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">106.12194</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-117">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H7</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H7</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">91.13048</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-118">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C7H4</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C7H4</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">88.10666</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-119">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C6H5</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C6H5</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">77.1039</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-121">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H7N6O4</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H7N6O4</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">203.13618</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-122">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>N2O4H</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>N2O4H</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">93.01894</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-120">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>NO2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>NO2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <ChemicalName>
+            <Value>Nitrite</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/NO2/c2-1-3</InChI>
+          <InChIKey>JCXJVPUVTGWSNB-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>14797-65-0</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">46.0055</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-123">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H6N5O4</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H6N5O4</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">176.11084</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-124">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C2H2N5O4</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C2H2N5O4</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">160.06838</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-125">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C4H6N5O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C4H6N5O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">156.12274</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-126">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H5N4O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H5N4O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">129.0974</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-127">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C2H4N3O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C2H4N3O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">102.07206</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-128">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C3H4N3</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C3H4N3</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">82.08396</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-129">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>N2O2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>N2O2</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">60.0122</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-130">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>CH2N</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>CH2N</StoichiometricFormula>
+          <IonCharge>-1</IonCharge>
+          <InChIKey/>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">28.03328</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-131">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C2H4O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C2H4O</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Acetaldehyde</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C2H4O/c1-2-3/h2H,1H3</InChI>
+          <InChIKey>IKHGUXGNUITLKF-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>75-07-0  </Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">44.05256</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-135">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C2H2</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C2H2</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Acetylene</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C2H2/c1-2/h1-2H</InChI>
+          <InChIKey>HSFWRNGVRCDJHI-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>74-86-2</Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">26.03728</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-138">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>C2H4</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>C2H4</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Ethylene</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/C2H4/c1-2/h1-2H2</InChI>
+          <InChIKey>VGGSQFUCUMXWEO-UHFFFAOYSA-N</InChIKey>
+          <CASRegistryNumber>
+            <Value>74-85-1 </Value>
+          </CASRegistryNumber>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">28.05316</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+      <Molecule speciesID="XIDEADB-142">
+        <MolecularChemicalSpecies>
+          <OrdinaryStructuralFormula>
+            <Value>H2O</Value>
+          </OrdinaryStructuralFormula>
+          <StoichiometricFormula>H2O</StoichiometricFormula>
+          <IonCharge>0</IonCharge>
+          <ChemicalName>
+            <Value>Water</Value>
+          </ChemicalName>
+          <InChI>InChI=1S/H2O/h1H2</InChI>
+          <InChIKey>XLYOFNOQVPJJNP-UHFFFAOYSA-N</InChIKey>
+          <VAMDCSpeciesID/>
+          <NormalModes/>
+          <StableMolecularProperties>
+            <MolecularWeight>
+              <Value units="amu">18.01528</Value>
+            </MolecularWeight>
+          </StableMolecularProperties>
+        </MolecularChemicalSpecies>
+      </Molecule>
+    </Molecules>
+    <Particles>
+      <Particle speciesID="XIDEADB-electron" name="electron">
+        <Comments>low energy electrons</Comments>
+        <ParticleProperties>
+          <ParticleCharge>-1</ParticleCharge>
+        </ParticleProperties>
+      </Particle>
+    </Particles>
+  </Species>
+  <Processes>
+    <Radiative/>
+  </Processes>
+</XSAMSData>
