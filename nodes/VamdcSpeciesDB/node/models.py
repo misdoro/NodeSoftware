@@ -56,7 +56,10 @@ class VamdcNodes(models.Model):
     #The last update by the cron job, may be thought as last seen date
     class Meta:
         db_table = u'vamdc_nodes'
-
+        
+    def __unicode__(self): 
+      return self.short_name
+      
 class VamdcSpecies(models.Model):
     id = models.CharField(max_length=120, primary_key=True)
     inchi = models.TextField()
@@ -73,12 +76,14 @@ class VamdcSpecies(models.Model):
     smiles = models.TextField(blank=True)
     created = models.DateTimeField(auto_now = False, editable=False, default = datetime.now)
     status = models.IntegerField(default=0, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
+    #Disabled species are not exported to the public database
     origin_member_database = models.ForeignKey(VamdcNodes, db_column='member_databases_id')
     #The source database from which this species was originally inserted. 
     #A value of zero indicates that the species information was generated or acquired from a source 
     #that is not one of the VAMDC member databases.
     class Meta:
         db_table = u'vamdc_species'
+        ordering = ['mass_number','charge']
 
     def symbol(self):
         return self.stoichiometric_formula.replace('+','').replace('-','').replace('[0-9]','')
@@ -117,7 +122,7 @@ class VamdcSpecies(models.Model):
         Creates a string which is formated like a dictionary with all the foreign species ids and the related database name.
         This can be used to provide the information via a comment-elelment.
         """
-        speciesids = self.vamdcmemberdatabaseidentifiers_set.all()
+        speciesids = self.vamdcnodespecies_set.all()
         return_string="{"
         for sid in speciesids:
             return_string+="{%s:%s}," % (sid.database_species_id ,sid.member_database.short_name)
@@ -129,6 +134,12 @@ class VamdcSpecies(models.Model):
         """
         """
         return self.species_foreign_ids()
+      
+    def __unicode__(self):
+        if species_type==SpeciesType.atom:
+          return "(%d)%s%d"%(mass_number,stoichiometric_formula,charge)
+        else:
+          return stoichiometric_formula
 
 
 #Update 2015.11: conformers table was never used, put everything in inchikey exceptions
