@@ -134,12 +134,16 @@ class VamdcSpecies(models.Model):
         """
         """
         return self.species_foreign_ids()
-      
+    
+
+    
     def __unicode__(self):
-        if species_type==SpeciesType.atom:
-          return "(%d)%s%d"%(mass_number,stoichiometric_formula,charge)
+        if self.species_type==SpeciesType.ATOM:
+          return "(%d)%s%d"%(self.mass_number,self.stoichiometric_formula,self.charge)
         else:
-          return stoichiometric_formula
+          return self.stoichiometric_formula
+        
+   
 
 
 #Update 2015.11: conformers table was never used, put everything in inchikey exceptions

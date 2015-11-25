@@ -1,0 +1,13 @@
+{% extends "node/base.html" %}
+
+{% block content %}
+    <h2>Publishers</h2>
+    <ul>
+        {% for vamdc_node in object_list %}
+            <li>{{ vamdc_node.short_name }}</li>
+            {%for element in vamdc_node.vamdcnodespecies_set.all%}
+              {{ element.species}}
+            {% endfor %}
+        {% endfor %}
+    </ul>
+{% endblock %}
