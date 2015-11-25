@@ -1,6 +1,7 @@
 from django.conf.urls import  url, include
 from django.contrib import admin
 import vamdctap.urls
+from node import urls as node_urls
 
 # Uncomment the next two lines to enable the admin:
 #from django.contrib import admin
@@ -14,7 +15,8 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^tap/', include('vamdctap.urls')),
-#    url(r'', include(node.urls)),
+    
+    url(r'', include(node_urls)),
 
 ]
 
