@@ -114,8 +114,11 @@ def update_atom(vl_atom, db_node):
     try:
         massnumber = vl_atom.MassNumber
     except:
-        db_dict_atom = VamdcDictAtoms.objects.get(symbol=vl_atom.ChemicalElementSymbol, most_abundant=1)
-        massnumber = db_dict_atom.mass_number
+        try:
+            db_dict_atom = VamdcDictAtoms.objects.get(symbol=vl_atom.ChemicalElementSymbol, most_abundant=1)
+            massnumber = db_dict_atom.mass_number
+        except:
+            massnumber = 0
 
     db_atom, created = VamdcSpecies.objects.get_or_create(
         defaults={
@@ -145,7 +148,7 @@ def verify_molecule(vl_molecule):
 
 def update_molecule(vl_molecule,db_node):
     speciesid = vl_molecule.VAMDCSpeciesID
-    
+
 
 def update_species_in_node(db_node, db_species, vl_species):
     """
