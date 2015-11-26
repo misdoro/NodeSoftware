@@ -15,10 +15,10 @@ class Migration(migrations.Migration):
         csvreader.next()#Ignore header row
         for row in csvreader:
           VamdcDictAtoms.objects.create(
-            symbol=row[1],
-            mass_number=row[2],
-            most_abundant=row[3],
-            nuclear_charge=row[4],
+            symbol=row[0],
+            mass_number=row[1],
+            most_abundant=row[2],
+            nuclear_charge=row[3],
             ).save()
 
     dependencies = [
