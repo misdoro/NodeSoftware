@@ -70,7 +70,7 @@ class Migration(migrations.Migration):
 
 
     dependencies = [
-        ('node', '0007_auto_20151127_2033'),
+        ('node', '0001_initial'),
     ]
 
     operations = [

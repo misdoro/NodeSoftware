@@ -71,6 +71,7 @@ def load_species(vl_node):
             verify_atom(vl_atom)
             db_atom = update_atom(vl_atom, db_node)
             update_species_in_node(db_node, db_atom, vl_atom)
+            update_atom_names(db_atom,vl_atom)
         except Exception, e:
             print "Failed to load atom:", e
             pprint(vl_atom)
@@ -89,6 +90,7 @@ def load_species(vl_node):
             print "Failed to load molecule:", e
             pprint(vl_molecule)
             traceback.print_exc(file=sys.stdout)
+
 
 
 def verify_atom(vl_atom):
@@ -143,6 +145,32 @@ def update_atom(vl_atom, db_node):
         print ("found atom %s %d" % (db_atom.stoichiometric_formula, db_atom.charge))
 
     return db_atom
+
+def update_atom_names(db_atom,vl_atom):
+    symbol=db_atom.stoichiometric_formula
+    mass=db_atom.mass_number
+    try:
+        atomname = VamdcDictAtoms.objects.filter(symbol=symbol,mass_number=mass)[0]
+        if db_atom.charge > 0:
+            stringname="%s positive ion %d"%()
+        elif db_atom.charge<0:
+            stringname="%s negative ion %d"%(db_atom.name,db_atom.charge)
+        else:
+            stringname=db_atom.name
+
+        db_speciesname,created = VamdcSpeciesNames.objects.get_or_create(
+            defaults={
+                'search_priority':-1,
+                'created':datetime.now()
+            },
+            species=db_atom,
+            name=stringname,
+        )
+        return db_speciesname
+    except:
+        print ("Unable to find atom $s (m %d) in the dictionary"%(symbol,mass))
+    return None
+
 
 
 def verify_molecule(vl_molecule):
