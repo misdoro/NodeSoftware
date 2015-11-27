@@ -51,7 +51,7 @@ class VamdcNodes(models.Model):
     description = models.CharField(max_length=765, blank=True)
     contact_email = models.CharField(max_length = 100, blank = False)
     ivo_identifier = models.CharField(max_length = 100, blank = False, unique=True)
-    status = models.IntegerField(default=0, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
+    status = models.IntegerField(default=RecordStatus.NEW, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
     last_update_date = models.DateTimeField(auto_now = False, editable=False, default = datetime.now)
     #The last update by the cron job, may be thought as last seen date
     class Meta:
@@ -75,7 +75,7 @@ class VamdcSpecies(models.Model):
     imageURL = models.CharField(max_length=765, blank=True)
     smiles = models.TextField(blank=True)
     created = models.DateTimeField(auto_now = False, editable=False, default = datetime.now)
-    status = models.IntegerField(default=0, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
+    status = models.IntegerField(default=RecordStatus.NEW, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
     #Disabled species are not exported to the public database
     origin_member_database = models.ForeignKey(VamdcNodes, db_column='member_databases_id')
     #The source database from which this species was originally inserted. 
@@ -195,9 +195,10 @@ class VamdcSpeciesNames(models.Model):
     id = models.AutoField(primary_key=True)
     species = models.ForeignKey(VamdcSpecies)
     name = models.CharField(max_length=450)
-    markup_type = models.IntegerField(default=0, blank = False, choices=MarkupTypes.MARKUP_TYPES)
+    markup_type = models.IntegerField(default=MarkupTypes.TEXT, blank = False, choices=MarkupTypes.MARKUP_TYPES)
     search_priority = models.IntegerField()
     created = models.DateTimeField()
+    status = models.IntegerField(default=RecordStatus.NEW, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
     class Meta:
         db_table = u'vamdc_species_names'
 
@@ -227,9 +228,10 @@ class VamdcSpeciesStructFormulae(models.Model):
     species = models.ForeignKey(VamdcSpecies)
     formula = models.CharField(max_length=450)
     #markup_type = models.ForeignKey(VamdcMarkupTypes)
-    markup_type = models.IntegerField(default=1, blank = False, choices=MarkupTypes.MARKUP_TYPES)
+    markup_type = models.IntegerField(default=MarkupTypes.HTML, blank = False, choices=MarkupTypes.MARKUP_TYPES)
     search_priority = models.IntegerField()
     created = models.DateTimeField()
+    status = models.IntegerField(default=RecordStatus.NEW, blank = False, choices=RecordStatus.RECORD_STATUS_CHOICES)
     class Meta:
         db_table = u'vamdc_species_struct_formulae'
 
