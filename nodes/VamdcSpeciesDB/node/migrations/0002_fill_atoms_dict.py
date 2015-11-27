@@ -75,7 +75,8 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.RunPython(json_load_atoms),
-        migrations.RunSQL('CREATE TEMPORARY TABLE IF NOT EXISTS most_abundant as (select id,symbol,max(abundance) from vamdc_dict_atoms group by nuclear_charge order by id);'),
+        migrations.RunSQL('CREATE TEMPORARY TABLE IF NOT EXISTS most_abundant as (select id,symbol,max(abundance) from vamdc_dict_atoms group by nuclear_charge);'),
+        #This one is giving the wrong ids
         migrations.RunSQL('update vamdc_dict_atoms set most_abundant=1 where id in (select id from most_abundant);'),
     ]
 
