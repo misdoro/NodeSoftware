@@ -84,6 +84,7 @@ def load_species(vl_node):
             vl_molecule = verify_molecule(vl_molecule)
             db_molecule = update_molecule(vl_molecule, db_node)
             update_species_in_node(db_node, db_molecule, vl_molecule)
+            update_molecule_names(db_molecule,vl_molecule)
         except  Exception, e:
             print "Failed to load molecule:", e
             pprint(vl_molecule)
@@ -217,6 +218,22 @@ def update_molecule(vl_molecule, db_node):
 
     assert isinstance(db_molecule, VamdcSpecies)
     return db_molecule
+
+
+def update_molecule_names(db_molecule,vl_molecule):
+    db_speciesname = None
+    if (vl_molecule.ChemicalName is not None):
+        #Do not try to loop over names here, since there are coma-containing names.
+        db_speciesname,created = VamdcSpeciesNames.objects.get_or_create(
+            defaults={
+                'search_priority':-1,
+                'created':datetime.now()
+            },
+            species=db_molecule,
+            name=vl_molecule.ChemicalName,
+        )
+
+    return db_speciesname
 
 
 def update_species_in_node(db_node, db_species, vl_species):
