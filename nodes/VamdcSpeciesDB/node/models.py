@@ -241,16 +241,20 @@ class VamdcDictAtoms(models.Model):
     This is a helper model and its contents provide
     a dictionary for atomic elements.
     !!! THIS IS NOT PART OF THE OFFICIAL VAMDC SPECIES DB !!!
+    Loads automatically from a copy of IAEA data obtained from https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html
+    json location https://www-nds.iaea.org/relnsd/zipper?name=jsondata
     """
     id = models.AutoField(primary_key=True)
-    #name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
     symbol = models.CharField(max_length=10)
     #element = models.CharField(max_length=10)
-    mass_number = models.IntegerField()
-    #mass = models.FloatField()
-    #abundance = models.FloatField()
-    most_abundant = models.IntegerField()
-    #mass_reference = models.IntegerField()
     nuclear_charge = models.IntegerField()
+    mass_number = models.IntegerField()
+    mass = models.FloatField()
+    abundance = models.FloatField()
+    stable = models.BooleanField(default=False)
+    most_abundant = models.BooleanField(default=False)
+    #mass_reference = models.IntegerField()
+
     class Meta:
         db_table = u'vamdc_dict_atoms'
