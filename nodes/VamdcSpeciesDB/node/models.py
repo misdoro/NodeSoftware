@@ -258,3 +258,5 @@ class VamdcDictAtoms(models.Model):
 
     class Meta:
         db_table = u'vamdc_dict_atoms'
+
+
