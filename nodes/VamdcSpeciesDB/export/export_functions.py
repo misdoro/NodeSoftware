@@ -5,7 +5,7 @@ import settings
 from node.models import *
 from export.models import *
 from django.forms.models import model_to_dict
-from django.db import transaction
+
 
 from pprint import pprint
 
@@ -51,7 +51,7 @@ def export_species(labeldict,nodesdict):
     print ("Populating the species table")
     exportspecies=[]
     for element in VamdcSpecies.objects.using('default').filter(status=RecordStatus.ACTIVE):
-        pprint(element)
+        #pprint(element)
         dict = model_to_dict(element, fields=[field.name for field in element._meta.fields])
 
         for omit_field in ['status','species_type','origin_member_database']:
@@ -76,7 +76,7 @@ def export_species_names(labeldict):
     print ("Populating the species names")
     speciesnames=[]
     for elementName in VamdcSpeciesNames.objects.using('default').filter(status=RecordStatus.ACTIVE):
-        pprint(elementName)
+        #pprint(elementName)
 
         dict = model_to_dict(elementName, fields=[field.name for field in elementName._meta.fields])
         for omit_field in ['status','species','id','markup_type']:
@@ -94,7 +94,7 @@ def export_species_names(labeldict):
         elif (markup==MarkupTypes.LATEX):
             exportName.markup_type=labeldict['markup_tex']
 
-        pprint (exportName.markup_type)
+        #pprint (exportName.markup_type)
 
         try:
             exportName.species=ExportVamdcSpecies.objects.using('export').get(id=elementName.species.id)
